@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+    rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(https://images.pexels.com/photos/2819547/pexels-photo-2819547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    margin: 8% auto;
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.button-box{
+    width: 15rem;
+    height: 2.5rem;
+    margin: 2% auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 1rem;
+}
+
+.toggle-btn{
+    padding: .7rem 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 7.5rem;
+    height: 2.5rem;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: .5rem;
+    transition: .5s;
+}
+
