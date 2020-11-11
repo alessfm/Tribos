@@ -16,11 +16,13 @@
 
 .form-box{
     width: 25rem;
-    height: 25rem;
+    height: 14rem;
     position: relative;
-    margin: 8% auto;
+    margin: 15% auto;
     background: #fff;
     padding: 1.5rem;
+    outline: none;
+    border-radius: 1rem;
 }
 
 .button-box{
@@ -48,7 +50,44 @@
     width: 7.5rem;
     height: 2.5rem;
     background: linear-gradient(to right, #ff105f,#ffad06);
-    border-radius: .5rem;
+    border-radius: 1rem;
     transition: .5s;
 }
 
+.input-group{
+    top: 6%;
+    position: relative;
+    width: 15rem;
+    transition: .5s;
+}
+
+#login{left: 18%;}
+#cadastro{left: 98%;}
+
+.input-field{
+    width: 100%;
+    padding: .3rem 0; 
+    margin: .5rem;
+    outline: none;
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+}
+
+.checkbox{margin: .5rem;}
+
+span{color: #777;}
+
+.submit-btn{
+    width: 100%;
+    padding: .5rem 0;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 2rem;
+}
