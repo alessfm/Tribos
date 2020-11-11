@@ -1,4 +1,4 @@
-@import url(../CSS/fonts.css);
+@import url(./fonts.css);
 
 html,body{
     margin: 0%;
@@ -20,8 +20,8 @@ html,body{
     
 
     /* theme font-family */
-    --lev_Nuni:"lev_Nuni",cursive;
-    --reg_Nuni:"reg_Nuni",cursive;
+    --Lexend:'Lexend',cursive;
+    --Abel:'Abel',cursive;
     --bold_Nuni:"bold_Nuni",cursive;
     --lev_Mont:"lev_Mont",cursive;
     --reg_Mont:"reg_Mont",cursive;
@@ -46,8 +46,8 @@ ul{list-style-type: none;}
 i{padding: 0 .2rem;}
 
 h1{
-    font-family:var(--bold_Nuni);
-    font-size: 3.5rem;
+    font-family:var(--Lexend);
+    font-size: 4.5rem;
     color: var(--white);
 }
 
@@ -58,8 +58,8 @@ h2{
 }
 
 h3{
-    font-family:var(--bold_Mont);
-    font-size: 1.1rem;
+    font-family:var(--Abel);
+    font-size: 1.5rem;
     color: var(--white);
 }
 
@@ -72,7 +72,7 @@ button.btn{
     border: none;
     border-radius: .5rem;
     padding: 1rem 3rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--reg_Mont);
     cursor: pointer;
     color:var(--white);
@@ -142,7 +142,7 @@ p{
 */
 .nav .social{padding: 1.4rem 0;}
 
-.nav .social i:hover{color:var(--midnight);}
+.nav .social i:hover{color:var(--tamy);}
 
 /*-- x--Navbar--x --*/
 
@@ -152,13 +152,14 @@ main .site-title{
     height: 110vh;
     display: flex;
     justify-content: center;
-    background: url(../assets/fundo.jpg);
+    background: url(https://images.pexels.com/photos/2819547/pexels-photo-2819547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main .site-title .site-background{
     padding-top: 13rem;
-    text-align: left;
+    text-align: center;
 }
 
 main .site-title h1,h3{color:var(--bg-color);margin: .3rem;}
