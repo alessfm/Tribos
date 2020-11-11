@@ -1,0 +1,177 @@
+@import url(../CSS/fonts.css);
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    
+    /* theme colors */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --tamy: #7ed957;
+    
+    /* theme gradient colors */
+    
+
+    /* theme font-family */
+    --lev_Nuni:"lev_Nuni",cursive;
+    --reg_Nuni:"reg_Nuni",cursive;
+    --bold_Nuni:"bold_Nuni",cursive;
+    --lev_Mont:"lev_Mont",cursive;
+    --reg_Mont:"reg_Mont",cursive;
+    --bold_Mont:"bold_Mont",cursive;
+}
+
+/*-- ---Global Classes--- --*/
+
+a{
+    text-decoration: none; 
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+ul{list-style-type: none;}
+
+i{padding: 0 .2rem;}
+
+h1{
+    font-family:var(--bold_Nuni);
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+h2{
+    font-family: var(--bold_Mont);
+    font-size: 1.5rem;
+    color:var(--);
+}
+
+h3{
+    font-family:var(--bold_Mont);
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+h4{
+    font-family: var(--bold_Nuni);
+    color:var(--text-gray);
+}
+
+button.btn{
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--reg_Mont);
+    cursor: pointer;
+    color:var(--white);
+}
+
+.container{margin: 0 5vw;}
+
+p{
+    font-family:var(--lev_Nuni);
+    color:var(--bg-color);
+}
+/*-- x--Global Classes--x --*/
+
+
+/*-- ---Navbar--- --*/
+
+.nav{
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 11vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{justify-content: space-between;}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 85%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{height: 17rem;}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--reg_Mont);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link a:hover{color: var(--tamy);}
+/*
+.nav .nav-brand img{
+    width: 75px;
+    height: 75px;
+}
+*/
+.nav .social{padding: 1.4rem 0;}
+
+.nav .social i:hover{color:var(--midnight);}
+
+/*-- x--Navbar--x --*/
+
+/*-- ---Site Title--- --*/
+
+main .site-title{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    background: url(../assets/fundo.jpg);
+    background-size: cover;
+}
+
+main .site-title .site-background{
+    padding-top: 13rem;
+    text-align: left;
+}
+
+main .site-title h1,h3{color:var(--bg-color);margin: .3rem;}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--midnight);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--tamy);
+    color: var(--text-gray);
+}
+
+/*-- x--Site Title--x  --*/
