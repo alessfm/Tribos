@@ -1,7 +1,7 @@
 @import url(./fonts.css);
 
 html,body{
-    margin: 0%;
+    margin: 0%; 
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -172,7 +172,172 @@ main .site-title .btn{
 main .site-title .btn:hover{
     background: transparent;
     border: 1px solid var(--tamy);
-    color: var(--text-gray);
+    color: var(--bg-color);
 }
 
 /*-- x--Site Title--x  --*/
+
+/*-- --Site Cards--  --*/
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: var(--midnight);
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: var(--tamy);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 66%;
+}
+
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+
+.btncard {
+	background-color: var(--midnight);
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
+/*-- ---Footer--- --*/
+
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+    padding-top: .6rem;
+}
+
+footer.footer .container p{
+    color: var(--text-gray);
+    padding-top: .6rem;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--);
+    font-size: 1rem;
+    width: 73%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--tamy);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .follow .social i{color:var(--white);}
+
+footer.footer .rights{
+    justify-content: center;
+}
+
+footer.footer .rights h4 a{color: var(--white);}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{color:var(--midnight);}
+
+footer.footer .move-up span:hover{
+    cursor:pointer;
+    color: var(--white);
+}
+
+/*-- x--Footer--x --*/
