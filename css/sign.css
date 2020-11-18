@@ -25,44 +25,13 @@
     border-radius: 1rem;
 }
 
-.button-box{
-    width: 15rem;
-    height: 2.5rem;
-    margin: 2% auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
-    border-radius: 1rem;
-}
-
-.toggle-btn{
-    padding: .7rem 2rem;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-
-#btn{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 7.5rem;
-    height: 2.5rem;
-    background: linear-gradient(to right, #ff105f,#ffad06);
-    border-radius: 1rem;
-    transition: .5s;
-}
-
 .input-group{
     top: 6%;
     position: relative;
     width: 15rem;
     transition: .5s;
+    left: 18%;
 }
-
-#login{left: 18%;}
-#cadastro{left: 98%;}
 
 .input-field{
     width: 100%;
