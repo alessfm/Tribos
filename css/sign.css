@@ -1,3 +1,26 @@
+@import url(./fonts.css);
+
+:root{
+    
+    /* theme colors */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --tamy: #7ed957;
+    
+    /* theme gradient colors */
+    
+
+    /* theme font-family */
+    --Lexend:'Lexend',cursive;
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Livvic:'Livvic',cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,9 +37,9 @@
     position: absolute;
 }
 
-.form-box{
+.form-box-login{
     width: 25rem;
-    height: 14rem;
+    height: 13rem;
     position: relative;
     margin: 15% auto;
     background: #fff;
@@ -25,6 +48,19 @@
     border-radius: 1rem;
     align-content: center;
 }
+
+.form-box-register{
+    width: 25rem;
+    height: 16rem;
+    position: relative;
+    margin: 15% auto;
+    background: #fff;
+    padding: 1.5rem;
+    outline: none;
+    border-radius: 1rem;
+    align-content: center;
+}
+
 
 .input-group{
     top: 6%;
@@ -50,7 +86,11 @@
     margin: .5rem;
 }
 
-span{color: #777;}
+span {
+    color: #777;
+    font-family: var(--Livvic);
+    font-size: 0.9rem;
+}
 
 .submit-btn{
     width: 100%;
@@ -65,3 +105,18 @@ span{color: #777;}
     border-radius: 2rem;
     color: #FFFFFF;
 }
+
+::-webkit-input-placeholder  { 
+    color: #777;
+    font-family: var(--Livvic);
+    font-size: 0.9rem; }
+input:-moz-placeholder { 
+    color: #777;
+    font-family: var(--Livvic);
+    font-size: 0.9rem;
+}
+textarea:-moz-placeholder { 
+    color: #777;
+    font-family: var(--Livvic);
+    font-size: 0.9rem;
+ }
