@@ -23,6 +23,7 @@
     padding: 1.5rem;
     outline: none;
     border-radius: 1rem;
+    align-content: center;
 }
 
 .input-group{
@@ -45,7 +46,9 @@
     border-bottom: 1px solid #999;
 }
 
-.checkbox{margin: .5rem;}
+.checkbox{
+    margin: .5rem;
+}
 
 span{color: #777;}
 
@@ -55,8 +58,10 @@ span{color: #777;}
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right, #ff105f,#ffad06);
+    margin-top: 1rem;
+    background-color: #104f55;
     border: 0;
     outline: none;
     border-radius: 2rem;
+    color: #FFFFFF;
 }
