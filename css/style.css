@@ -22,10 +22,9 @@ html,body{
     /* theme font-family */
     --Lexend:'Lexend',cursive;
     --Abel:'Abel',cursive;
-    --bold_Nuni:"bold_Nuni",cursive;
-    --lev_Mont:"lev_Mont",cursive;
-    --reg_Mont:"reg_Mont",cursive;
-    --bold_Mont:"bold_Mont",cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Livvic:'Livvic',cursive;
 }
 
 /*-- ---Global Classes--- --*/
@@ -54,7 +53,7 @@ h1{
 h2{
     font-family: var(--bold_Mont);
     font-size: 1.5rem;
-    color:var(--);
+    color:var(--Anton);
 }
 
 h3{
@@ -81,7 +80,7 @@ button.btn{
 .container{margin: 0 5vw;}
 
 p{
-    font-family:var(--lev_Nuni);
+    font-family:var(--Josefin);
     color:var(--bg-color);
 }
 /*-- x--Global Classes--x --*/
@@ -129,7 +128,7 @@ p{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
-    font-family: var(--reg_Mont);
+    font-family: var(--Livvic);
     font-size: 1.1rem;
 }
 
@@ -177,7 +176,7 @@ main .site-title .btn:hover{
 
 /*-- x--Site Title--x  --*/
 
-/*-- --Site Cards--  --*/
+/*-- ---Site Cards---  --*/
 .course {
 	background-color: #fff;
 	border-radius: 10px;
@@ -189,7 +188,7 @@ main .site-title .btn:hover{
 	width: 700px;
 }
 
-.course h6 {
+.course h4 {
 	opacity: 0.6;
 	margin: 0;
 	letter-spacing: 1px;
@@ -308,9 +307,9 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: var(--white);
-    font-family: var(--);
+    font-family: var(--Livvic);
     font-size: 1rem;
-    width: 73%;
+    width: 71%;
 }
 
 footer.footer .newsletter .form-element span{
