@@ -16,9 +16,6 @@ html,body{
     --midnight: #104f55;
     --tamy: #7ed957;
     
-    /* theme gradient colors */
-    
-
     /* theme font-family */
     --Lexend:'Lexend',cursive;
     --Abel:'Abel',cursive;
@@ -27,8 +24,7 @@ html,body{
     --Livvic:'Livvic',cursive;
 }
 
-/*-- ---Global Classes--- --*/
-
+/* Global Classes */
 a{
     text-decoration: none; 
     color: var(--text-gray);
@@ -83,11 +79,10 @@ p{
     font-family:var(--Josefin);
     color:var(--bg-color);
 }
-/*-- x--Global Classes--x --*/
+/*x Global Classes x*/
 
 
-/*-- ---Navbar--- --*/
-
+/* Navbar */
 .nav{
     padding: 0 2rem;
     height: 0rem;
@@ -101,7 +96,7 @@ p{
 .nav .toggle-collapse{
     position: absolute;
     top: 0%;
-    width: 85%;
+    width: 90%;
     cursor: pointer;
     display: none;
 }
@@ -135,22 +130,22 @@ p{
 .nav .nav-items .nav-link a:hover{color: var(--tamy);}
 
 .nav .nav-brand img{
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
 }
 
 .nav .social{padding: 1.4rem 0;}
 
 .nav .social i:hover{color:var(--tamy);}
 
-/*-- x--Navbar--x --*/
+/*x Navbar x*/
 
-/*-- ---Site Title--- --*/
+
+/* Site Title */
 
 main .site-title{
     height: 110vh;
     display: flex;
-    background-color: red;
     justify-content: center;
     background: url(https://images.pexels.com/photos/2819547/pexels-photo-2819547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
@@ -175,15 +170,16 @@ main .site-title .btn:hover{
     color: var(--bg-color);
 }
 
-/*-- x--Site Title--x  --*/
+/*x Site Title x*/
 
-/*-- ---Site Cards---  --*/
-.main-cards{
+
+/* Site Cards */
+main .site-cards{
     display: inline-flex;
 }
  
-.course {
-	background-color: #fff;
+main .course{
+	background-color: var(--white);
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
@@ -191,30 +187,30 @@ main .site-title .btn:hover{
     margin: 16px;
     align-items: center;
 	overflow: hidden;
-	width: 40rem;
+	width: 39rem;
 }
 
-.course h4 {
+main .course h4{
 	opacity: 0.6;
 	margin: 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.course h2 {
+main .course h2{
 	letter-spacing: 1px;
 	margin: 10px 0;
 }
 
-.course-preview {
+main .course-preview{
 	background-color: var(--midnight);
-	color: #fff;
+	color: var(--white);
 	padding: 30px;
 	max-width: 250px;
 }
 
-.course-preview a {
-	color: #fff;
+main .course-preview a{
+	color: var(--white);
 	display: inline-block;
 	font-size: 12px;
 	opacity: 0.6;
@@ -222,13 +218,13 @@ main .site-title .btn:hover{
 	text-decoration: none;
 }
 
-.course-info {
+main .course-info{
 	padding: 30px;
 	position: relative;
 	width: 100%;
 }
 
-.progress-container {
+main .progress-container{
 	position: absolute;
 	top: 30px;
 	right: 30px;
@@ -236,14 +232,14 @@ main .site-title .btn:hover{
 	width: 150px;
 }
 
-.progress {
-	background-color: #ddd;
+main .progress{
+	background-color: var(--text-gray);
 	border-radius: 3px;
 	height: 5px;
 	width: 100%;
 }
 
-.progress::after {
+main .progress::after{
 	border-radius: 3px;
 	background-color: var(--tamy);
 	content: '';
@@ -254,13 +250,13 @@ main .site-title .btn:hover{
 	width: 66%;
 }
 
-.progress-text {
+main .progress-text{
 	font-size: 10px;
 	opacity: 0.6;
 	letter-spacing: 1px;
 }
 
-.btncard {
+main .btncard{
 	background-color: var(--midnight);
 	border: 0;
 	border-radius: 50px;
@@ -275,9 +271,10 @@ main .site-title .btn:hover{
     letter-spacing: 1px;
     cursor: pointer;
 }
+/*x Site Cards x*/
 
-/*-- ---Footer--- --*/
 
+/* Footer */
 footer.footer{
     height: 100%;
     background: var(--bg-color);
@@ -346,31 +343,27 @@ footer.footer .move-up span:hover{
     cursor:pointer;
     color: var(--white);
 }
+/*x Footer x*/
 
-/*-- x--Footer--x --*/
 
 /*           Viewport less then or equal to 1130px           */
 @media only screen and (max-width: 1130px){
+    .nav{min-height: 15vh;}
     footer.footer .container{grid-template-columns: repeat(2,1fr);}
 }
-
 /*     x      Viewport less then or equal to 1130px     x      */
-
 
 /*           Viewport less then or equal to 750px           */
 @media only screen and (max-width: 750px){
     .nav .nav-menu,.nav .nav-items{flex-direction: column; text-align: center;}
-
+    .nav .nav-brand{width: 47px;height: 47px;}
     .nav .social i{padding: 0rem 1.5rem;}
-
     .nav .toggle-collapse{display: initial;}
     footer.footer .container{grid-template-columns: repeat(1,1fr);}
-
     .main-cards{
         display: block;
         width: 31rem;
     }
-
     .progress-container{
         top: -1rem;
     }
@@ -380,25 +373,18 @@ footer.footer .move-up span:hover{
         top: 1%;
     }
 }
-
 /*     x     Viewport less then or equal to 750px     x     */
 
-
 /*           Viewport less then or equal to 520px           */
-
 @media only screen and (max-width: 520px){
+    main .course{width: 30rem;}
     main .blog{height:125vh}
-
     main .blog-post .blog-content{margin: 1rem 2rem;}
-
     footer.footer .container > div{padding: 1rem .9rem !important;}
-    
     footer .rights{
         padding: 0 1.4rem;
         text-align: center;
     }
-    
     nav .toggle-collapse{width: 80%;}
 }
-
 /*     x      Viewport less then or equal to 520px    x       */
