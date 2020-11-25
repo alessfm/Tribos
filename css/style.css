@@ -117,7 +117,7 @@ p{
     color: var(--text-gray);
 }
 
-.collapse{height: 17rem;}
+.collapse{height: 27rem;}
 
 .nav .nav-items{
     display: flex;
@@ -133,12 +133,12 @@ p{
 }
 
 .nav .nav-items .nav-link a:hover{color: var(--tamy);}
-/*
+
 .nav .nav-brand img{
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
 }
-*/
+
 .nav .social{padding: 1.4rem 0;}
 
 .nav .social i:hover{color:var(--tamy);}
