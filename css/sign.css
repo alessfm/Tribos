@@ -46,12 +46,8 @@
     padding: 1.5rem;
     outline: none;
     border-radius: 1rem;
-<<<<<<< Updated upstream
     align-content: center;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2)
-=======
-    /* overflow: hidden; */
->>>>>>> Stashed changes
 }
 
 .form-box-register{
@@ -89,7 +85,6 @@
     border-bottom: 1px solid #999;
 }
 
-<<<<<<< Updated upstream
 .checkbox{
     margin: .5rem;
 }
@@ -100,8 +95,6 @@ span {
     font-size: 0.9rem;
 }
 
-=======
->>>>>>> Stashed changes
 .submit-btn{
     width: 100%;
     padding: .5rem 0;
@@ -113,7 +106,6 @@ span {
     border: 0;
     outline: none;
     border-radius: 2rem;
-<<<<<<< Updated upstream
     color: #FFFFFF;
     font-family: var(--Livvic);
     font-size: 0.9rem;
@@ -129,23 +121,3 @@ span {
     color: #777;
     font-family: var(--Livvic);
     font-size: 0.9rem; }
-=======
-}
-
-.checkbox{
-    margin: .5rem;
-}
-
-span{
-    color: #777;
-    bottom: 1em;
-    position: absolute;
-}
-
-#login{
-    left: 18%;
-}
-#cadastro{
-    left: 98%;
-}
->>>>>>> Stashed changes
