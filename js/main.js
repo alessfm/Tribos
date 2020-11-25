@@ -11,6 +11,9 @@ $(document).ready( _ => {
     $('.move-up span').click( _ => {
         $('html,body').animate({
             scrollTop: 0
-        },1000);
+        },2000);
     });
+
+    // animações
+    AOS.init();
 });
