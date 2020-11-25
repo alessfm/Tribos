@@ -150,6 +150,7 @@ p{
 main .site-title{
     height: 110vh;
     display: flex;
+    background-color: red;
     justify-content: center;
     background: url(https://images.pexels.com/photos/2819547/pexels-photo-2819547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
@@ -358,14 +359,21 @@ footer.footer .move-up span:hover{
 
 /*           Viewport less then or equal to 750px           */
 @media only screen and (max-width: 750px){
-    .nav .nav-menu,.nav .nav-items{flex-direction: column;}
+    .nav .nav-menu,.nav .nav-items{flex-direction: column; text-align: center;}
 
     .nav .social i{padding: 0rem 1.5rem;}
 
     .nav .toggle-collapse{display: initial;}
-
     footer.footer .container{grid-template-columns: repeat(1,1fr);}
 
+    .main-cards{
+        display: block;
+        width: 31rem;
+    }
+
+    .progress-container{
+        top: -1rem;
+    }
     footer.footer .move-up{
         position: absolute;
         right: 1%;
