@@ -1,5 +1,6 @@
 # 🏔️ Tribos
 #### Website com o objetivo de unir as pessoas
+🔗 [Link](https://11-alexs.github.io/Tribos/)
 
 ***
 
@@ -47,4 +48,15 @@ O plano é fazer um layout tanto na Web quanto Mobile, acessível a todos os usu
 - A NavBar do Web está com a div um pouco maior, o que não atrapalha, mas não está no espaço correto.
 - O Web quando usado na horizontal nos smartphones (<500px) ainda não está bem organizado.
 
-###### Have a good day!
+***
+
+### 🤝 Deseja ajudar? 
+1️⃣ **Clone o repositório** para seu PC (é gratuito e na Licença MIT, _fácil fácil_).   
+
+2️⃣ **Faça as alterações que achar necessárias** ou se quiser, crie novas ideias!
+
+3️⃣ Faça um **pull request** para sugerir mudanças.
+    
+4️⃣ Faça uma **issue** se achar algum problema que não listamos nos 🦗 Bugs.
+
+##### Obrigado!
