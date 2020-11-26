@@ -42,7 +42,7 @@
     height: 13rem;
     position: relative;
     margin: 15% auto;
-    background: #fff;
+    background: var(--white);
     padding: 1.5rem;
     outline: none;
     border-radius: 1rem;
@@ -55,7 +55,7 @@
     height: 16rem;
     position: relative;
     margin: 15% auto;
-    background: #fff;
+    background: var(--white);
     padding: 1.5rem;
     outline: none;
     border-radius: 1rem;
@@ -63,7 +63,6 @@
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
 
 }
-
 
 .input-group{
     top: 6%;
@@ -82,15 +81,13 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--text-gray);
 }
 
-.checkbox{
-    margin: .5rem;
-}
+.checkbox{margin: .5rem;}
 
-span {
-    color: #777;
+span{
+    color: var(--text-gray);
     font-family: var(--Livvic);
     font-size: 0.9rem;
 }
@@ -102,11 +99,11 @@ span {
     display: block;
     margin: auto;
     margin-top: 1rem;
-    background-color: #104f55;
+    background-color: var(--midnight);
     border: 0;
     outline: none;
     border-radius: 2rem;
-    color: #FFFFFF;
+    color: var(--white);
     font-family: var(--Livvic);
     font-size: 0.9rem;
 }
@@ -117,7 +114,8 @@ span {
     color: var(--bg-color);
 }
 
-::-webkit-input-placeholder  { 
-    color: #777;
+::-webkit-input-placeholder{ 
+    color: var(--text-gray);
     font-family: var(--Livvic);
-    font-size: 0.9rem; }
+    font-size: 0.9rem; 
+}
