@@ -27,3 +27,8 @@
     font-family: 'Livvic';
     src: url('../assets/Livvic-Regular.ttf');
 }
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('../assets/Roboto-Regular.ttf')
+}
