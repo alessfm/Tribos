@@ -173,42 +173,75 @@ main .site-title .btn:hover{
 
 
 /* Site Cards */
-main .site-cards{
-    display: inline-flex;
+.site-cards{
+	display: inline-flex;
+	background-color: #273746;
 }
  
-main .course{
-	background-color: var(--white);
+.course{
+	background-color:var(--white);
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
 	max-width: 100%;
-    margin: 16px;
+    margin: 1rem;
     align-items: center;
 	overflow: hidden;
 	width: 39rem;
+	color: var(--white);
 }
 
-main .course h4{
+.course h4{
 	opacity: 0.6;
 	margin: 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-main .course h2{
+.course h2{
 	letter-spacing: 1px;
 	margin: 10px 0;
 }
 
-main .course-preview{
+.course-preview{
 	background-color: var(--midnight);
 	color: var(--white);
 	padding: 30px;
 	max-width: 250px;
 }
 
-main .course-preview a{
+.floresta{
+	background-image: url('https://cdn.pixabay.com/photo/2014/09/07/22/17/forest-438432_960_720.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.palestra{
+	background-image: url('https://image.freepik.com/fotos-gratis/vista-traseira-de-audiencia-escutar-alto-falantes-ligado-a-fase-em-a-corredor-conferencia-ou-seminario-reuniao_41418-3371.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.show{
+	background-image: url('https://image.freepik.com/fotos-gratis/luzes-de-discoteca-azuis_106386-97.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.encontro{
+	background-image: url('https://image.freepik.com/fotos-gratis/padre-segurando-o-calice-durante-uma-missa-nupcial-de-cerimonia-de-casamento-conceito-de-religiao_139317-2036.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.votacao{
+	background-image: url('https://image.freepik.com/fotos-gratis/vista-traseira-no-homem-caucasiano-executando-a-conferencia-de-parceiros-e-investidores-na-mesa-no-escritorio_153977-1782.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.bar{
+	background-image: url('https://image.freepik.com/fotos-gratis/empregado-de-mesa-com-duas-canecas-de-cerveja-gelada-na-bandeja_147764-650.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.course-preview a{
 	color: var(--white);
 	display: inline-block;
 	font-size: 12px;
@@ -217,13 +250,13 @@ main .course-preview a{
 	text-decoration: none;
 }
 
-main .course-info{
+.course-info{
 	padding: 30px;
 	position: relative;
 	width: 100%;
 }
 
-main .progress-container{
+.progress-container{
 	position: absolute;
 	top: 30px;
 	right: 30px;
@@ -231,14 +264,14 @@ main .progress-container{
 	width: 150px;
 }
 
-main .progress{
+.progress{
 	background-color: var(--text-gray);
 	border-radius: 3px;
 	height: 5px;
 	width: 100%;
 }
 
-main .progress::after{
+.progress::after{
 	border-radius: 3px;
 	background-color: var(--tamy);
 	content: '';
@@ -249,13 +282,18 @@ main .progress::after{
 	width: 66%;
 }
 
-main .progress-text{
+.progress-text{
 	font-size: 10px;
-	opacity: 0.6;
 	letter-spacing: 1px;
+	font-size: 0.7em;
+	font-weight: 300;
+	color: var(--white);
+	padding: 2px;
+	font-family: var(--Roboto);
+	border-radius: 2px;
 }
 
-main .btncard{
+.btncard{
 	background-color: var(--midnight);
 	border: 0;
 	border-radius: 50px;
@@ -271,7 +309,6 @@ main .btncard{
     cursor: pointer;
 }
 /*x Site Cards x*/
-
 
 /* Footer */
 footer.footer{
@@ -347,7 +384,7 @@ footer.footer .move-up span:hover{
 
 /*           Viewport less then or equal to 1130px           */
 @media only screen and (max-width: 1130px){
-    .nav{min-height: 15vh;}
+    .nav{min-height: 12vh;}
     footer.footer .container{grid-template-columns: repeat(2,1fr);}
 }
 /*     x      Viewport less then or equal to 1130px     x      */
@@ -355,7 +392,7 @@ footer.footer .move-up span:hover{
 /*           Viewport less then or equal to 750px           */
 @media only screen and (max-width: 750px){
     .nav .nav-menu,.nav .nav-items{flex-direction: column; text-align: center;}
-    .nav .nav-brand{width: 47px; height: 47px;}
+    .nav .nav-brand{display: none;}
     .nav-menu{
         display: flex;
         align-items: center;
@@ -367,6 +404,14 @@ footer.footer .move-up span:hover{
     }
     .nav .social i{padding: 0rem 1.5rem;}
     .nav .toggle-collapse{display: initial;}
+    .site-cards{
+        display: block;
+        width:100%;
+	}
+	.course{
+		width: 39rem;
+		margin: 0.5em auto;
+	}
     footer.footer .container{grid-template-columns: repeat(1,1fr);}
     .main-cards{
         display: block;
@@ -385,14 +430,14 @@ footer.footer .move-up span:hover{
 
 /*           Viewport less then or equal to 520px           */
 @media only screen and (max-width: 520px){
+    main .site-title h1,h3{color:var(--white);}
     main .course{width: 30rem;}
     main .blog{height:125vh}
     main .blog-post .blog-content{margin: 1rem 2rem;}
-    footer.footer .container > div{padding: 1rem .9rem !important;}
+    footer .footer .container > div{padding: 1rem .9rem !important;}
     footer .rights{
         padding: 0 1.4rem;
         text-align: center;
     }
-    nav .toggle-collapse{width: 80%;}
 }
 /*     x      Viewport less then or equal to 520px    x       */
