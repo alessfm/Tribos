@@ -116,7 +116,6 @@ p{
 
 .nav .nav-items{
     display: flex;
-    margin: 0;
 }
 
 .nav .nav-items .nav-link{
@@ -303,18 +302,18 @@ footer.footer .container p{
 }
 
 footer.footer .newsletter .form-element{
-    background: black;
     display: inline-block;
 }
 
 footer.footer .newsletter .form-element input{
     padding: .5rem .7rem;
     border: none;
-    background: transparent;
+    background: black;
     color: var(--white);
     font-family: var(--Livvic);
     font-size: 1rem;
     width: 71%;
+    margin-top: 0.5em;
 }
 
 footer.footer .newsletter .form-element span{
@@ -323,7 +322,7 @@ footer.footer .newsletter .form-element span{
     cursor: pointer;
 }
 
-footer.footer .follow .social i{color:var(--white);}
+footer.footer .follow .social i{color:var(--white); margin-top:0.5em;}
 
 footer.footer .rights{
     justify-content: center;
@@ -356,7 +355,16 @@ footer.footer .move-up span:hover{
 /*           Viewport less then or equal to 750px           */
 @media only screen and (max-width: 750px){
     .nav .nav-menu,.nav .nav-items{flex-direction: column; text-align: center;}
-    .nav .nav-brand{width: 47px;height: 47px;}
+    .nav .nav-brand{width: 47px; height: 47px;}
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em auto;
+    }
+    .nav-items{
+        margin-top: 1em;
+    }
     .nav .social i{padding: 0rem 1.5rem;}
     .nav .toggle-collapse{display: initial;}
     footer.footer .container{grid-template-columns: repeat(1,1fr);}
