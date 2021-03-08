@@ -176,6 +176,7 @@ main .site-title .btn:hover{
 .site-cards{
 	display: inline-flex;
 	background-color: #273746;
+    width: 100em;
 }
  
 .course{
